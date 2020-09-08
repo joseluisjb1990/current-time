@@ -10,7 +10,7 @@ const CurrentTime = () => {
   setInterval(() => setNow(getCurrentTime(), REFRESH_INTERVAL_MS));
 
   return (
-    <div>{ now }</div>
+    <div data-elm-id="current-time-box">{ now }</div>
   );
 }
 
