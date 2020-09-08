@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
+import CurrentTime from './components/CurrentTime';
 
-function App() {
-  const [now, setNow] = useState(new Date(Date.now()).toLocaleTimeString());
-
-  setInterval(() => setNow(new Date(Date.now()).toLocaleTimeString(), 1000));
-
+const App = () => {
   return (
-    <div>{ now }</div>
-  );
+    <div>
+      <CurrentTime />
+    </div>
+  )
 }
 
 export default App;
