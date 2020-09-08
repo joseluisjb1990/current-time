@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CurrentTime from './components/CurrentTime';
 
 const App = () => {
   return (
-    <div>
+    <div className="row d-flex justify-content-center">
       <CurrentTime />
     </div>
   )
